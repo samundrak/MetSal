@@ -75,7 +75,7 @@ Template.userfeed.events({
 		var data = {};
 		if (val.length > 0) {
 			data.status = val;
-
+			
 			Meteor.call('statusPost', data, function(err, res) {
 				if (!err) {
 					console.log(res);
@@ -93,14 +93,4 @@ Template.userfeed.events({
 })
 
 
- function inputAuthorization(value) {
- 	if (value && value.length > 0) {
- 		return true;
- 	} else {
- 		return false;
- 	}
- }
-
- function getInputData(event, element) {
- 	return event.target[element].value;
- }
+ 

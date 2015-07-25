@@ -21,7 +21,7 @@ Template.header.helpers({
 })
 Template.userfeed.helpers({
 	feeds: function() {
-		var posts =statusCl.find({created_by:Meteor.user()._id}, {sort: {created_at: -1}}).fetch();
+		var posts =statusCl.find({creator_id:Meteor.user()._id}, {sort: {created_at: -1}}).fetch();
 		console.log(posts);
 		return posts;
 	}
