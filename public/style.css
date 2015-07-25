@@ -1,0 +1,26 @@
+body{
+	
+}
+.header{
+	color:white;
+	background-color:#337ab7;
+	padding:10px;
+}
+.pageinfo{
+	background-image:url('/img/5-1.jpg');
+	height:400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.paragraphs{
+	padding:10px;
+	opacity:0.5;
+	border-radius:20px;
+	background-color:black;
+}
+.paragraphs{
+	text-align: justify;
+	opacity:1;
+	color:white;	
+	font-size:15px;
+}
