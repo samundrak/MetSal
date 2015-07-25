@@ -5,6 +5,7 @@
 		</div>
 		<div class="col-sm-2">
 			{{#if currentUser}}
+			<label>{{ username }}</label>
 			<a class="btn btn-success logout"  style="color:white"> Logout</a>
 			{{else}}
 			<a class="btn btn-success" href="{{pathFor route='login'}}" style="color:white"> Login</a>

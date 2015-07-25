@@ -3,12 +3,37 @@
 				<li class="list-group-item active">News Feeds</li>
 				<li class="list-group-item">
 					<div class="form-group">
-
-  <textarea class="form-control" rows="3" id="comment" placeholder="Write your Thoughts..." resizable="false"></textarea>
+  <textarea class="form-control status" rows="3" id="comment" placeholder="Write your Thoughts..." resizable="false"></textarea>
   <br/>
-    <label for="comment" class="btn btn-primary postStatus">Submit</label>
+    <label for="comment" class="btn btn-primary postStatus" value="Submit"> Submit </label>
 </div>
 				</li>
-	<li class="list-group-item">No status found</li>
+				{{#each feeds}}
+	<li class="list-group-item">
+		<div class="row">
+			<div class="col-sm-12">
+				{{ created_by }}
+			</div>
+			<hr/>
+		</div>
+		<div class="row">
+			{{status }}
+		</div>
+					<hr/>
+
+		<div class="row">
+			<div class="col-sm-4">
+				Like
+			</div>
+			<div class="col-sm-4">
+				Comment
+			</div>
+			<div class="col-sm-4">
+				Delete
+			</div>
+		</div>
+	</li>
+	<br/>
+				{{/each}}
 			</ul>
 </template>
