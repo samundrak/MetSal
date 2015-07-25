@@ -1,0 +1,40 @@
+<template name="register">
+     <form name="login" class="registerform" method="post">
+          <ul class="list-group">
+               <li class="list-group-item active"> Register </li>
+                 <li class="list-group-item">
+      <label> Firstname</label>
+     <input required type="text" class="form-control" name="firstname"/>
+     </li>  <li class="list-group-item">
+      <label> Lastname</label>
+     <input required type="text" class="form-control" name="lastname"/>
+     </li>  <li class="list-group-item">
+      <label> Gender </label>
+  
+<label class="radio-inline"><input type="radio" name="gender" value="0">Male</label>
+<label class="radio-inline"><input type="radio" name="gender" value="1">Female</label>
+ 
+
+
+
+     </li>
+               <li class="list-group-item">
+     	<label> Username</label>
+     <input required type="text" class="form-control" name="username"/>
+     </li>
+      <li class="list-group-item">
+     	<label> Password</label>
+     	
+     <input required type="password"  class="form-control" name="password"/>
+     </li>
+      <li class="list-group-item">
+     	<label> Email</label>
+     	
+     <input required type="email"  class="form-control" name="email"/>
+          </li>
+                <li class="list-group-item">
+     	<input type="submit" class="btn btn-primary" value="Sign up"/>
+     </li>
+     </ul>
+     </form>
+</template>

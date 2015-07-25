@@ -7,3 +7,7 @@
 meteor-platform
 autopublish
 insecure
+accounts-password
+iron:router
+msavin:mongol
+themeteorchef:jquery-validation
